@@ -1,0 +1,21 @@
+{
+   "name": "No PDF Download",
+   "description": "Forces Content-Disposition: attachment HTTP header to inline, so PDFs can be viewed in the browser instead of a download popup.",
+   "version": "1.0",
+   "manifest_version": 3,
+   "icons": {
+     "128": "icon_128.png"
+   },
+   "background": {
+     "service_worker": "background.js"
+   },
+   "permissions": ["declarativeNetRequest"],
+   "host_permissions": ["*://*/*.pdf"],
+   "web_accessible_resources": [
+     {
+       "resources": ["rules.json"],
+       "matches": ["<all_urls>"]
+     }
+   ]
+ }
+ 

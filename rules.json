@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "modifyHeaders",
+        "responseHeaders": [
+          {
+            "header": "Content-Disposition",
+            "operation": "set",
+            "value": "inline"
+          },
+          {
+            "header": "Content-Type",
+            "operation": "set",
+            "value": "application/pdf"
+          }
+        ]
+      },
+      "condition": {
+        "urlFilter": "*.pdf",
+        "resourceTypes": ["main_frame", "sub_frame"]
+      }
+    }
+  ]
+  
