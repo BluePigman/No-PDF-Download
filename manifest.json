@@ -10,7 +10,7 @@
      "service_worker": "background.js"
    },
    "permissions": ["declarativeNetRequest"],
-   "host_permissions": ["<all_urls>"],
+   "host_permissions": ["*://*/*.pdf"],
    "web_accessible_resources": [
      {
        "resources": ["rules.json"],

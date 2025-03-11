@@ -19,7 +19,6 @@
       },
       "condition": {
         "urlFilter": "*.pdf",
-        "excludedDomains": ["github.com", "*.github.com"],
         "resourceTypes": ["main_frame", "sub_frame"]
       }
     }
